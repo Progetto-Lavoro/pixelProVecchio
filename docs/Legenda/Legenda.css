@@ -1,0 +1,220 @@
+* {
+    margin: 50px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #138539;
+    --white: white;
+    --secondary-color: #e7dbd2;
+    --terziary-color: #FFD95F;
+    --quarter-color: #5FCCFF;
+    --border: .1rem solid rgba(220, 198, 156, .3);
+}
+
+body {
+    margin-top: -20px;
+    margin-right: 5.7rem;
+    margin-left: 5.7rem;
+    background-color: rgb(243, 230, 215);
+    font-family: 'roboto', sans-serif;
+}
+
+html {
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #138539, #41e0e0),
+        linear-gradient(to right, #4169E1, #d9e6e6);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row {
+    padding: 2rem 3rem;
+    flex-basis: 47%;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.prenota-button {
+    margin: 1rem;
+    border-radius: .5rem;
+    padding: 1.5rem 3rem;
+    color: white;
+    background-color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: none;
+    text-decoration: none;
+}
+
+p {
+    margin-top: -2rem;
+    line-height: 1.6;
+    /* Modifica il valore a tuo piacimento per ottenere l'interlinea desiderata */
+}
+
+.analisi {
+    padding-top: 60px;
+}
+
+.piepagina {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centra orizzontalmente */
+    align-items: center;
+    text-align: center;
+    /* Centra il testo all'interno */
+}
+
+.piepagina p {
+    color: var(--main-color);
+    margin: 0;
+}
+
+.toggle-btn {
+    display: none
+}
+
+.logo {
+    height: 100px;
+}
+
+.links-container {
+    margin-left: 0;
+    list-style: none;
+}
+
+.links {
+    color: var(--main-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.links-container .link-items {
+    text-align: left;
+    margin: 0 1px;
+    /* Modifica la distanza orizzontale tra gli elementi <li> */
+    line-height: 1.6;
+}
+
+.links:hover {
+    opacity: 0.5;
+}
+
+.elenco {
+    margin: 0;
+}
+
+.section-padding {
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* Spaziatura uniforme tra i div */
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.pricing-item {
+    max-width: 75%;
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    /* Aggiunto un margine per separare i div */
+    box-sizing: border-box;
+}
+
+.pricing-plan {
+    background-color: white;
+    box-shadow: 5px 5px 10px #a88a48;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.pricing-plan .pricing-header {
+    padding: 20px 20px;
+    border-bottom: 1px solid #f5f5f8;
+    position: relative;
+    margin: 0;
+}
+
+.pricing-plan .pricing-header h3 {
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.pricing-plan .best-value {
+    position: absolute;
+    top: -20px;
+    right: -95px;     
+    color: var(--white);
+    background-color: var(--main-color);
+    text-transform: capitalize;
+    transform: rotate(50deg);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 30px;
+ }
+
+.pricing-plan .pricing-price {
+    margin: 15px 0;
+    /* Riduce la distanza verticale */
+}
+
+.pricing-plan .pricing-price .currency {
+    font-size: 16px;
+    font-weight: 600;
+    color: #923a78;
+    margin-left: 15px;
+    align-self: flex-start;
+}
+
+.pricing-plan .pricing-price .price {
+    margin-left: 6rem;
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.pricing-item .pricing-body {
+    margin: -10px;
+    background-color: #ebeae1;
+}
+
+.pricing-item .pricing-body ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.pricing-item .pricing-body ul li {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--main-color);
+    line-height: 26px;
+    font-family: 'roboto', sans-serif;
+    margin-right: 20px; /* Aggiunto margine per separare gli elementi */
+}
+
+.pricing-item .pricing-body ul li i {
+    color: var(--main-color); /* Assicura che l'icona sia visibile */
+    margin-right: 50px; /* Aggiunto margine per separare l'icona dal testo */
+    font-size: 16px; /* Imposta la dimensione dell'icona */
+}

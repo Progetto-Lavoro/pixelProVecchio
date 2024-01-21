@@ -1,0 +1,138 @@
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vedi progetto</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section class="view-property">
+
+      <div class="details">
+         <div class="thumb">
+            <div class="big-image">
+               <img src="../img/GPT-3.jpg" alt="">
+            </div>
+
+            <div class="button-condividi">
+               <div id="fb-root"></div>
+               <script async defer crossorigin="anonymous"
+                  src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v11.0" nonce="N1jYCEIF"></script>
+               <div class="fb-share-button" data-href="https://www.pixelpro.cloud/schedeprogetti/vediprogetto_10.html"
+                  data-layout="button" data-size="small">
+                  <a target="_blank"
+                     href="https://www.facebook.com/sharer/sharer.php?u=https://www.pixelpro.cloud/schedeprogetti/vediprogetto_10.html&amp;src=sdkpreparse"
+                     class="fb-xfbml-parse-ignore">Condividi</a>
+               </div>
+               <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: it_IT</script>
+               <script type="IN/Share"
+                  data-url="https://www.pixelpro.cloud/schedeprogetti/vediprogetto_10.html"></script>
+               <a class="twitter-share-button"
+                  href="https://twitter.com/intent/tweet?url=https://www.pixelpro.cloud/schedeprogetti/vediprogetto_10.html&text=Una pagina che ti potrebbe interessare"
+                  data-size="large">Tweet</a>
+               <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+               <a href="https://api.whatsapp.com/send?text=Una pagina che ti potrebbe interessare%20https://www.pixelpro.cloud/schedeprogetti/vediprogetto_10.html"
+                  target="_blank" class="whatsapp-button">
+                  <button class="whatsapp-button">
+                     <i class="fab fa-whatsapp"></i>
+                     WhatsApp
+                  </button>
+               </a>
+               <a href="https://t.me/share/url?url=https://www.pixelpro.cloud/schedeprogetti/vediprogetto_10.html&text=Una pagina che ti potrebbe interessare"
+                  target="_blank" class="telegram-button">
+                  <i class="fab fa-telegram"></i>
+                  Telegram
+               </a>
+            </div>
+
+            <div class="button-container">
+               <a href="https://chatgpt-3-eight.vercel.app/" class="inline-btn">Vedi progetto
+                  online</a>
+               <a href="https://pixelpro.cloud" class="inline-btn">Torna alla Home</a>
+            </div>
+            <div class="row">
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active categorie-btn"
+                     data-filter-value="categorie">Categorie</button>
+                  <button type="button" class="active" data-filter-value="react"
+                     onclick="window.location.href='../servizi/servizi.html'">servizi</button>
+               </div>
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano
+                     consigliato</button>
+                  <button type="button" class="active" data-filter="basic">medium</button>
+                  <button type="button" class="active" data-filter="medium">plus</button>
+               </div>
+            </div>
+
+            <div class="row-descrizione">
+               <h3 class="title">Descrizione del Progetto - Sito per un servizio di intelligenza artificiale</h3>
+               <p class="description">Benvenuti nel sito web GPT-3 AI, il nostro progetto dedicato all'intelligenza
+                  artificiale! <br>
+                  Qui potrete scoprire come la tecnologia all'avanguardia possa migliorare la vita quotidiana e
+                  soddisfare
+                  le esigenze digitali. <br>
+                  Nella sezione "Home" troviamo una panoramica della tecnologia e dei suoi potenziali utilizzi, dalla
+                  chatbot ai chatbot di assistenza virtuale, dalla traduzione automatica alla generazione di testo. <br>
+                  Nella sezione "Presentazione" potremo conoscere i dettagli tecnici della tecnologia e le sue
+                  caratteristiche distintive, come la velocità, la precisione e la capacità di apprendimento. <br>
+                  Nella sezione "Applicazioni" scopriremo come l'intelligenza artificiale possa essere applicata a
+                  diverse
+                  aree, come l'assistenza sanitaria, la finanza e l'e-commerce, per migliorare i risultati del business
+                  e la soddisfazione dei clienti. <br>
+                  Infine, nella sezione "Contatti" possiamo contattare direttamente il team per avere maggiori
+                  informazioni sulla tecnologia e sulle soluzioni personalizzate. <br>
+                  Grazie per aver visitato questo progetto di grande impatto visivo, basato sulla tecnologia
+                  al top in questo momento!
+               </p>
+            </div>
+         </div>
+
+         <section class="pricing section-padding" id="pricing">
+            <div class="container">
+               <div class="row">
+                  <div class="section-title text-align">
+                     <h5 class="sub-title">Prezzi</h5>
+                     <h3 class="main-title">Piani Tariffari</h3>
+                     <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div id="cards-container" class="card-container"></div>
+         <script>
+            var cardsContainer = document.getElementById('cards-container');
+            fetch('cards.html')
+               .then(response => response.text())
+               .then(html => cardsContainer.innerHTML = html);
+         </script>
+         <div class="piepagina">
+            <img src="../img/Logo.png" class="logo" alt="Logo Pixelpro">
+            <p><strong><strong>&copy; copyright 2023 by pixelpro | all rights reserved</strong></p>
+
+            <ul class="links-container">
+               <li class="link-items"><a href="/index.html#home" class="links">Home</a></li>
+               <li class="link-items"><a href="/index.html#progetti" class="links">Progetti</a></li>
+               <li class="link-items"><a href="/index.html#progettionline" class="links">Progetti online</a></li>
+               <li class="link-items"><a href="/ndex.html#skills" class="links">Skills</a></li>
+               <li class="link-items"><a href="/index.html#contatti" class="links">Contatti</a></li>
+            </ul>
+            <div class="toggle-btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>

@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="it" theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("zuhEYZeiinkcp5B2i");
+        })();
+    </script>
+    <script src="script.js" type="text/javascript"></script>
+    <title>PixelPro Web Agency</title>
+
+    <!-- google font CDN -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;300;500;600;700;800;900&family=Roboto:wght@400;700&family=Sahitya&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Torna all'inizio">&#8593;</button>
+    <header>
+
+        <!-- navbar -->
+
+        <nav id="navbar">
+            <div class="intestazione">
+                <img src="img/Logo.png" class="logo" alt="">
+                <p>Pixelpro | Web Agency</p>
+            </div>
+
+            <ul class="links-container">
+                <li class="link-items"><a href="#home" class="links">Home</a></li>
+                <li class="link-items"><a href="#progetti" class="links">Progetti</a></li>
+                <li class="link-items"><a href="#progettionline" class="links">Progetti online</a></li>
+                <li class="link-items"><a href="#skills" class="links">Skills</a></li>
+                <li class="link-items"><a href="#contatti" class="links">Contatti</a></li>
+            </ul>
+
+            <!-- toggle btn -->
+
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- sezione hero -->
+
+        <main id="home">
+            <div class="hero-content">
+                <picture>
+                    <source srcset="img/arredo-ufficio.jpg" alt="Arredo ufficio">
+                    <img src="img/pc-per-ufficio.jpg" alt="Arredo ufficio" class="hero-image">
+                </picture>
+
+                <div class="text-overlay">
+                    <h1 class="hero-headline">Siti Web E Creatività Digitale Al Tuo Servizio</h1>
+                    <p class="hero-secondary-line"><strong>Il futuro del tuo business dipende dalla tua presenza online,
+                            creala col nostro team</strong></p>
+                </div>
+            </div>
+
+            <!--
+            <div class="descrizione">
+                <h1>Perché un sito web?</h1>
+                <p><strong>Ci sono circa 2 miliardi di siti web nel mondo.</strong> Questo incredibile numero aumenta
+                    sempre più velocemente
+                    ogni anno perché le aziende e i liberi professionisti sanno che un sito Web è un must assoluto. E
+                    sai perché?
+                    Perché, prima che un cliente acquisti o inizi a collaborare con te, controlla prima il
+                    tuo sito web! Essere online è, quindi, una necessità.</p>
+
+                <p>Non è affatto semplice far crescere le proprie attività professionali senza una presenza online. Nel
+                    corso degli anni e, soprattutto in questo ultimo decennio, questo spazio si è trasformato nel
+                    principale canale di acquisizione e generazione di clienti. Ed è proprio
+                    il sito web che un sempre maggior numero di aziende e liberi professionisti utilizza per
+                    coordinare queste attività e misurarne l'efficacia, ossia il conseguimento degli obiettivi
+                    prefissati.</p>
+
+                <p>Ci sono sempre molti obiettivi da raggiungere ed ecco perché necessiti di un sito web. La tua
+                    presenza online può agevolarti nel collegarti con la clientela, commercializzare prodotti o servizi
+                    o condividere
+                    informazioni con il pubblico.</p>
+
+                <p>Alcune imprese impiegano i siti web per fornire dettagli riguardo alla loro attività, come i
+                    prodotti o i servizi offerti, le modalità di contatto e gli orari di apertura. Altre aziende,
+                    invece, utilizzano il sito web come piattaforma di vendita online per commercializzare prodotti e
+                    servizi in rete.</p>
+
+                <p>Molti liberi professionisti utilizzano il sito web anche per scopi di carattere più personale.
+                    Possono consistere nel condividere dettagli sulla propria vita privata, come interessi e hobby, o
+                    nel tenere un blog sui
+                    propri pensieri ed esperienze. Il sito web può anche servire come archivio per documenti o immagini
+                    o addirittura per creare un portfolio online.</p>
+
+                <p>Ogni sito ha la sua specifica finalità e spesso anche più di una. Tuttavia, tieni a mente che
+                    più obiettivi avrà il tuo sito, tanto più complicata e impegnativa sarà la sua realizzazione in
+                    termini di tempo e costi. Sarà necessario svolgere un maggior lavoro analitico per delineare il suo
+                    concept in modo da garantire il successo nel raggiungimento di specifici obiettivi.</p>
+
+                <img src="/img/sito-web.jpg" alt="Sito web" class="sitoweb">
+
+                <h1>Analizziamo come raggiungere gli obiettivi con un sito web</h1>
+                <p>Prima di tutto bisogna capire quale scopo deve avere il tuo sito online. Gli obiettivi di un libero
+                    professionista, avvocato - freelance - youtuber o altro, saranno diversi, ad esempio, da quelli di
+                    un sito per la vendita o la promozione di prodotti siano essi fisici o digitali.</p>
+                <p>I passaggi fondamentali per impostare in modo impeccabile l'obiettivo del tuo sito web sono
+                    principalmente due:</p>
+                <p><strong>1) Identificare chi è o sarà il destinatario del tuo sito web</strong><br>
+                    <strong>2) Analizzare la tua situazione attuale o della tua azienda</strong>
+                </p>
+                <p>Questi due passaggi sono così importanti perché se non li rispetti, li imposti in modo errato o non
+                    li imposti affatto, il tuo sito web sarà semplicemente inefficace, non risponderà alle esigenze dei
+                    tuoi clienti, non ti permetterà di raggiungere i tuoi obiettivi. In parole povere non ti porterà
+                    profitto. Questi due passaggi si completano analizzando e perseguendo i seguenti steps:</p>
+                <h2>1. Costruire la fiducia dei tuoi clienti</h2>
+                <p>Il primo obiettivo che devi ottenere con un sito web, qualunque sia la tua attività, è quello di
+                    conquistare la fiducia dei tuoi clienti. Come amiamo sempre citare; 'Non esiste una seconda
+                    occasione per fare una prima impressione'. È statisticamente provato che i visitatori di un sito web
+                    si formano una opinione su di te, sul tuo marchio e le tue offerte in soli 0,5 secondi.
+                    Il primo consiglio per ottenere questa fiducia è quello di incoraggiare e condividere recensioni e
+                    testimonianze, quasi 9 persone su 10 cercano di leggere le recensioni prima di acquistare un
+                    prodotto o un servizio.<br>
+                    La prima impressione che il cliente si crea deriva al 94% dall'aspetto del sito web. Ed è per questo
+                    motivo che la nostra agenzia pone la massima attenzione allo studio, sviluppo e creazione di siti
+                    web altamente professionali con layout accattivanti e animazioni di ottimo effetto.</p>
+                <h2>2. La tua esperienza come garanzia</h2>
+                <p>Su un sito web è di fondamentale importanza descrivere le tue esperienze sia per presentarti come un
+                    vero professionista sia per creare la fiducia dei clienti verso le tue offerte. Ma quale tipologia
+                    di esperienze dovrebbero essere presentate su un sito web?<br>
+                    Solo aggiornando costantemente i risultati e facendoli vedere ai tuoi clienti potrai accrescere in
+                    loro la fiducia verso di te, il tuo marchio e i tuoi prodotti o servizi.<br>
+                    Anche se non hai molta esperienza e molti progetti realizzati, puoi, ad esempio, mostrare i tuoi
+                    diplomi o i corsi di formazione che hai completato. Se hai un'esperienza lavorativa più estesa,
+                    mostra cosa sei riuscito a realizzare finora, gli effetti o quanti clienti hai già servito. Ricorda
+                    che i risultati possono essere presentati in molti modi, non importa quanti ne possiedi.</p>
+                <h2>3. Presentare le tue offerte</h2>
+                <p>Che tu decida di presentarti online con un portfolio personale, una landing page o un sito ecommerce
+                    devi sempre tenere presente che devi offrire ai tuoi potenziali clienti qualcosa che risolva i loro
+                    problemi; è per questo motivo che stanno visionando il tuo sito web. Perché dovrebbero affidarsi a
+                    te se non sanno nulla circa quello che offri?<br>
+                    Ben il 47% degli utenti visualizza una sezione con un servizio o un'offerta di prodotti prima di
+                    interessarsi ad altre sezioni. Ciò significa che presentare il tuo prodotto sul tuo sito web è
+                    estremamente importante! Dopotutto, è una delle informazioni più ricercate dai potenziali clienti.
+                </p>
+                <h2>4. Stabilire e mantenere continui contatti con i tuoi clienti</h2>
+                <p>Il 65% degli utenti si aspetta informazioni di contatto facilmente accessibili. Questa è una buona
+                    notizia in quanto segnala che i potenziali destinatari sono molto ansiosi di stabilire un contatto.
+                    Posizionare le tue informazioni di contatto sul sito web in un luogo facilmente accessibile e
+                    visibile renderà più facile trovarti e ti consentirà di attirare nuovi clienti.<br>
+                    Un altro vantaggio dell'utilizzo di un sito web come luogo di contatto è quello di semplificare
+                    tutta la comunicazione e guidarla attraverso i canali preferiti. A seconda delle informazioni che
+                    includi nella sezione dei dettagli di contatto, segnali il prima possibile e il modo più semplice
+                    per contattarti. Puoi fornire un numero di telefono, un indirizzo e-mail, un modulo di contatto o
+                    persino un chatbot. Grazie a ciò, renderai più facile per i potenziali clienti contattarti e tenersi
+                    in contatto in seguito.<br>
+                    Le persone acquistano più volentieri da aziende e marchi con cui costruiscono relazioni durature,
+                    affettive e contatti costanti. Su cosa dovrebbe basarsi una relazione del genere? Certo, sulla
+                    fiducia! Un metodo collaudato per crearlo è comunicare con i tuoi clienti e contattarli
+                    costantemente. Non significa solo conversazione faccia a faccia. Il livello visivo del tuo sito web,
+                    del profilo dei social media, dei post, degli articoli del blog e di qualsiasi tipo di contenuto che
+                    pubblichi dal tuo marchio o dalla tua azienda è la tua comunicazione con i clienti!</p>
+                <h2>5. Fidelizzare il tuo portafoglio clienti</h2>
+                <p>Una volta che inizi a costruire relazioni con i tuoi clienti e costruisci la loro fiducia, il tuo
+                    prossimo passo dovrebbe essere quello di costruire una base di clienti fedeli. I clienti dovrebbero
+                    sapere che scegliere la tua offerta ripagherà semplicemente di più.<br>
+                    Perché dovresti preoccuparti di costruire la tua comunità? In questo modo otterrai destinatari
+                    coinvolti che ti forniranno feedback continui e saranno molto più disposti a utilizzare la tua
+                    offerta e a consigliarla ad altri. Secondo il 68% delle aziende, avere una community contribuisce a
+                    creare nuovi contatti.</p>
+                <h2>6. Generare visite sul sito e vendite come conseguenza</h2>
+                <p>Se il costo dell'acquisizione di un nuovo cliente, sia in termini finanziari che straordinari, è
+                    elevato per te e desideri ridurlo, un sito web incentrato sulla generazione di lead ti aiuterà in
+                    modo efficace.<br>
+                    Ottenere contatti attraverso il tuo sito web è essenziale in quanto ti consentirà di raggiungere
+                    direttamente potenziali clienti interessati al tuo prodotto o servizio.<br>
+                    Per il 91% dei marketer, generare lead è il loro obiettivo più importante. Per questo motivo,
+                    utilizzano con entusiasmo vari mezzi per svilupparli, incluso un sito web.</p>
+                <h2>7. Commercio elettronico e digitale</h2>
+                <p>Nel 2020 il numero di siti di ecommerce ha superato i 20 milioni! Questo è un numero enorme di siti
+                    il cui scopo principale è la vendita online. Ricorda, tuttavia, che il tuo sito web sarà sempre
+                    coinvolto nel processo di vendita indipendentemente dalla sua tipologia. Ogni volta che attiri
+                    traffico sul tuo sito web grazie a post di blog, portfolio o opinioni dei clienti, influisci sulle
+                    decisioni per i loro acquisti.</p>
+                <h2>8. Condivisione della tua esperienza e delle tue conoscenze</h2>
+                <p>Sapevi che un blog è un'ottima fonte per generare lead e aumentare il traffico sul sito web? Ben il
+                    70% delle persone preferisce ottenere informazioni da un blog piuttosto che da annunci
+                    tradizionali.<br>
+                    Offrendo ai tuoi destinatari contenuti di alta qualità, diventerai un esperto ai loro occhi nel
+                    tempo. Quando cercheranno risposte alle loro domande, saranno guidati dal tuo blog. Lo
+                    consiglieranno ai loro amici e, così, guadagnerai la loro fiducia. E se decidi di lanciare un prodotto
+                    firmato con il tuo marchio o nome, te lo acquisteranno più volentieri!</p>
+            </div>
+        -->
+
+            <section id="progetti">
+                <div class="contenitore">
+                    <h1 class="section-title" data-text="progetti">Progetti</h1>
+                    <p class="section-info">Alcuni dei nostri progetti, realizzati in questi ultimi anni,
+                        lavorando con un team fantastico. Da qui puoi prendere spunto per delle idee e cominciare
+                        a costruire con noi il tuo futuro sul mondo</p>
+                </div>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide" style="background-image: url(img/amazon-ecommerce.jpg);">
+                            <a href="schedeprogetti/vediprogetto_1.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/agenzia-viaggi.jpg);">
+                            <a href="schedeprogetti/vediprogetto_2.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-bakery.jpg);">
+                            <a href="schedeprogetti/vediprogetto_3.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/portfolio-avvocato.jpg);">
+                            <a href="schedeprogetti/vediprogetto_4.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/portfolio-personale.jpg);">
+                            <a href="schedeprogetti/vediprogetto_5.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/fotografia_alina.jpg);">
+                            <a href="schedeprogetti/vediprogetto_6.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/hotel-resorts.jpg);">
+                            <a href="schedeprogetti/vediprogetto_7.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/palestra-gym.jpg);">
+                            <a href="schedeprogetti/vediprogetto_8.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-costruzioni.jpg);">
+                            <a href="schedeprogetti/vediprogetto_9.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/GPT-3.jpg);">
+                            <a href="schedeprogetti/vediprogetto_10.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-yoga.jpg);">
+                            <a href="schedeprogetti/vediprogetto_11.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-cuccioli.jpg);">
+                            <a href="schedeprogetti/vediprogetto_12.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-cucina.jpg);">
+                            <a href="schedeprogetti/vediprogetto_13.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/portfolio-31-04.jpg);">
+                            <a href="schedeprogetti/vediprogetto_14.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/linee-aeree.jpg);">
+                            <a href="schedeprogetti/vediprogetto_15.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/architettura-interni.jpg);">
+                            <a href="schedeprogetti/vediprogetto_16.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/ristorante-gericht.jpg);">
+                            <a href="schedeprogetti/vediprogetto_17.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/portfolio-04-05.jpg);">
+                            <a href="schedeprogetti/vediprogetto_18.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/real-estate-homeland.jpg);">
+                            <a href="schedeprogetti/vediprogetto_19.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/portfolio-02-05.jpg);">
+                            <a href="schedeprogetti/vediprogetto_20.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/admin-dashboard.jpg);">
+                            <a href="schedeprogetti/vediprogetto_21.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-piante.jpg);">
+                            <a href="schedeprogetti/vediprogetto_22.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-tatoo.jpg);">
+                            <a href="schedeprogetti/vediprogetto_23.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/portfolio-18-04.jpg);">
+                            <a href="schedeprogetti/vediprogetto_24.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/arredamento-furnishop.jpg);">
+                            <a href="schedeprogetti/vediprogetto_25.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-xpensa.jpg);">
+                            <a href="schedeprogetti/vediprogetto_26.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-cani.jpg);">
+                            <a href="schedeprogetti/vediprogetto_27.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/portfolio-23-04.jpg);">
+                            <a href="schedeprogetti/vediprogetto_28.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-palestra.jpg);">
+                            <a href="schedeprogetti/vediprogetto_29.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-travel-engine.jpg);">
+                            <a href="schedeprogetti/vediprogetto_30.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/interni-design.jpg);">
+                            <a href="schedeprogetti/vediprogetto_31.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-banca-moderna.jpg);">
+                            <a href="schedeprogetti/vediprogetto_32.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito_cinema.jpg);">
+                            <a href="schedeprogetti/vediprogetto_33.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/portfolio-03-05.jpg);">
+                            <a href="schedeprogetti/vediprogetto_34.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-burger-house.jpg);">
+                            <a href="schedeprogetti/vediprogetto_35.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/portfolio-26-04.jpg);">
+                            <a href="schedeprogetti/vediprogetto_36.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-salvanatura.jpg);">
+                            <a href="schedeprogetti/vediprogetto_37.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/agenzia-viaggi-web.jpg);">
+                            <a href="schedeprogetti/vediprogetto_38.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-architettura.jpg);">
+                            <a href="schedeprogetti/vediprogetto_39.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-fashion.jpg);">
+                            <a href="schedeprogetti/vediprogetto_40.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-food.jpg);">
+                            <a href="schedeprogetti/vediprogetto_41.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-sneakers.jpg);">
+                            <a href="schedeprogetti/vediprogetto_42.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-ristorante.jpg);">
+                            <a href="schedeprogetti/vediprogetto_43.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sulla-strada.jpg);">
+                            <a href="schedeprogetti/vediprogetto_44.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-vetture-classiche.jpg);">
+                            <a href="schedeprogetti/vediprogetto_45.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-vini.jpg);">
+                            <a href="schedeprogetti/vediprogetto_46.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/agenzia_immobiliare.jpg);">
+                            <a href="schedeprogetti/vediprogetto_47.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-viaggi.jpg);">
+                            <a href="schedeprogetti/vediprogetto_48.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/realestate-myhome.jpg);">
+                            <a href="schedeprogetti/vediprogetto_49.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/sito-virtuale.jpg);">
+                            <a href="schedeprogetti/vediprogetto_50.html" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- filter buttons -->
+
+                <div class="row">
+                    <div class="portfolio-filter">
+                        <button type="button" class="filter-btn active categorie-btn"
+                            data-filter-value="categorie">Categoria</button>
+                        <button type="button" class="filter-btn" data-filter-value="portfolio"
+                            onclick="window.location.href='./portfolio/portfolio.html'">portfolio</button>
+                        <button type="button" class="active" data-filter-value="javascript"
+                            onclick="window.location.href='./servizi/servizi.html'">servizi</button>
+                        <button type="button" class="active" data-filter-value="react"
+                            onclick="window.location.href='./vendita/vendita.html'">vendita</button>
+                        <button type="button" class="active" data-filter-value="backend"
+                            onclick="window.location.href='./svago/svago.html'">svago</button>
+                        <button type="button" class="active" data-filter-value="fullstack"
+                            onclick="window.location.href='./ecommerce/ecommerce.html'">ecommerce</button>
+                    </div>
+                    <div class="portfolio-filter">
+                        <button type="button" class="filter-btn active classe-btn"
+                            data-filter-value="classe">Classe</button>
+                        <button type="button" class="active" data-filter="basic">basic</button>
+                        <button type="button" class="active" data-filter="medium">medium</button>
+                        <button type="button" class="active" data-filter="plus">plus</button>
+                        <button type="button" class="active" data-filter="ultra">ultra</button>
+                    </div>
+                </div>
+
+                <script src="index.js"></script>
+            </section>
+
+            <!-- sezione progetti online-->
+
+            <section id="progettionline">
+                <div class="titolo">
+                    <h1 class="section-title" data-text="online">Progetti online</h1>
+                    <p class="section-info">Qui trovi una raccolta di lavori eseguiti caratterizzati
+                        da design grafici accattivanti. Esplora una vasta gamma di progetti online che
+                        ti permetteranno di valutare la nostra esperienza e creatività. Scoprirai i nostri
+                        lavori passati e capirai come possiamo aiutarti a creare il tuo prossimo progetto.</p>
+                </div>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(img/Portfolio_Francesco.jpg);">
+                            <a href="http://francescosvara.com" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/maryhost.png);">
+                            <a href="https://mary-host.com" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/Portfolio_Francesco.jpg);">
+                            <a href="http://francescosvara.com" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/maryhost.png);">
+                            <a href="https://mary-host.com" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/Portfolio_Francesco.jpg);">
+                            <a href="http://francescosvara.com" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/maryhost.png);">
+                            <a href="https://mary-host.com" target="_blank">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <script src="index.js"></script>
+            </section>
+
+            <!-- skills -->
+
+            <section id="skills">
+                <div class="skills">
+                    <h1 class="section-title" data-text="skills">skills</h1>
+                </div>
+
+                <div class="contenitori-skills">
+                    <div class="contenitore-skills">
+                        <div class="icon">
+                            <div class="imgBx active" style="--i:1;" data-id="content1">
+                                <img src="./simboli/html.png">
+                            </div>
+                            <div class="imgBx" style="--i:2;" data-id="content2">
+                                <img src="./simboli/css.png">
+                            </div>
+                            <div class="imgBx" style="--i:3;" data-id="content3">
+                                <img src="./simboli/javascript.png">
+                            </div>
+                            <div class="imgBx" style="--i:4;" data-id="content4">
+                                <img src="./simboli/react.png">
+                            </div>
+                            <div class="imgBx" style="--i:5;" data-id="content5">
+                                <img src="./simboli/vite.png">
+                            </div>
+                            <div class="imgBx" style="--i:6;" data-id="content6">
+                                <img src="./simboli/three.png">
+                            </div>
+                            <div class="imgBx" style="--i:7;" data-id="content7">
+                                <img src="./simboli/php.png">
+                            </div>
+                            <div class="imgBx" style="--i:8;" data-id="content8">
+                                <img src="./simboli/phyton.png">
+                            </div>
+                            <div class="imgBx" style="--i:9;" data-id="content9">
+                                <img src="./simboli/tailwind.png">
+                            </div>
+                            <div class="imgBx" style="--i:10;" data-id="content10">
+                                <img src="./simboli/laravel.jpg">
+                            </div>
+                            <div class="imgBx" style="--i:11;" data-id="content11">
+                                <img src="./simboli/nodejs.png">
+                            </div>
+                            <div class="imgBx" style="--i:12;" data-id="content12">
+                                <img src="./simboli/typescriptren.png">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="contentBx active" id="content1">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/html.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>HTML<br><span>linguaggio di <br> formattazione</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content2">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/css.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>CSS<br><span>linguaggio di <br> formattazione</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content3">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/javascript.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>javascript<br><span>linguaggio di <br> programmazione</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content4">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/react.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>reactjs<br><span>framework open-source</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content5">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/vite.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>vitejs<br><span>server di sviluppo locale</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content6">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/three.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>threejs<br><span>libreria JavaScript <br> cross-browser</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content7">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/php.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>php<br><span>linguaggio di scripting <br> interpretato</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content8">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/phyton.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>python<br><span>linguaggio di <br> programmazione</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content9">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/tailwind.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>tailwind<br><span>linguaggio di <br> programmazione</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content10">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/laravel.jpg">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>laravel<br><span>framework open source</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content11">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/nodejs.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>nodejs<br><span>open source <br> multipiattaforma</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content12">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/typescriptren.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>typescript<br><span>linguaggio di <br> programmazione</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenitore-skills-destro">
+                        <div class="icon">
+                            <div class="imgBx active" style="--i:1;" data-id="content13">
+                                <img src="./simboli/bootstrap.png">
+                            </div>
+                            <div class="imgBx" style="--i:2;" data-id="content14">
+                                <img src="./simboli/canva.png">
+                            </div>
+                            <div class="imgBx" style="--i:3;" data-id="content15">
+                                <img src="./simboli/chatgbt.png">
+                            </div>
+                            <div class="imgBx" style="--i:4;" data-id="content16">
+                                <img src="./simboli/docker.png">
+                            </div>
+                            <div class="imgBx" style="--i:5;" data-id="content17">
+                                <img src="./simboli/figma.png">
+                            </div>
+                            <div class="imgBx" style="--i:6;" data-id="content18">
+                                <img src="./simboli/git.png">
+                            </div>
+                            <div class="imgBx" style="--i:7;" data-id="content19">
+                                <img src="./simboli/github.png">
+                            </div>
+                            <div class="imgBx" style="--i:8;" data-id="content20">
+                                <img src="./simboli/journey.png">
+                            </div>
+                            <div class="imgBx" style="--i:9;" data-id="content21">
+                                <img src="./simboli/mongodbren.png">
+                            </div>
+                            <div class="imgBx" style="--i:10;" data-id="content22">
+                                <img src="./simboli/promptbase.jpg">
+                            </div>
+                            <div class="imgBx" style="--i:11;" data-id="content23">
+                                <img src="./simboli/wordpress.png">
+                            </div>
+                            <div class="imgBx" style="--i:12;" data-id="content24">
+                                <img src="./simboli/sketchfab.png">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="contentBx active" id="content13">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/bootstrap.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>bootstrap<br><span>libreria html, css, js</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content14">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/canva.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>canva<br><span>progettazione grafica <br> online</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content15">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/chatgbt.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>chatgbt<br><span>strumento di OpenAI</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content16">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/docker.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>docker<br><span>software per processi <br> informatici</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content17">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/figma.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>figma<br><span>editor di grafica <br> vettoriale</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content18">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/git.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>gitbash<br><span>emulazione della riga di <br> comando Git</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content19">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/github.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>github<br><span>hosting per progetti <br> software</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content20">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/journey.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>midjourney<br><span>laboratorio di intelligenza <br> artificiale</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content21">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/mongodbren.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>mongodb<br><span>piattaforma di dati <br> applicativi</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content22">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/promptbase.jpg">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>promptbase<br><span>marketplace per prompt</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content23">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/wordpress.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>wordpress<br><span>piattaforma di blog e <br> content management</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="content24">
+                                <div class="card">
+                                    <div class="imgBx">
+                                        <img src="./simboli/sketchfab.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>sketchfab<br><span>piattaforma di <br> modellazione 3D</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    let imgBx = document.querySelectorAll('.imgBx');
+                    let contentBx = document.querySelectorAll('.contentBx');
+
+                    for (let i = 0; i < imgBx.length; i++) {
+                        imgBx[i].addEventListener('mouseover', function () {
+                            for (let i = 0; i < contentBx.length; i++) {
+                                contentBx[i].className = 'contentBx';
+                            }
+                            document.getElementById(this.dataset.id).className = 'contentBx active';
+
+                            for (let i = 0; i < imgBx.length; i++) {
+                                imgBx[i].className = 'imgBx';
+                            }
+                            this.className = 'imgBx active';
+                        })
+                    }
+                </script>
+            </section>
+
+            <section id="contatti">
+                <div class="scantina">
+                    <h1 class="section-title" data-text="contatto">Chiamaci in azione</h1>
+                    <p class="section-info">Compila questo modulo per contattarci segnalando
+                        nell'apposito campo giorno e ora in cui preferiresti essere richiamato.
+                        Se lascerai questo campo vuoto ti risponderemo solo con email.
+                        Sentiti libero di fare qualsiasi domanda.
+                        Ci piacerebbe conoscere le tue idee e lavorare con te.</p>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="row">
+                    <form id="myForm">
+                        <h3>Prenota una videochiamata</h3>
+                        <input type="text" id="fullName" placeholder="il tuo nome e cognome" class="box"
+                            required /><br />
+                        <input type="email" id="email_id" placeholder="la tua email" class="box" required /><br />
+                        <input type="tel" id="number" min="0" max="9999999999" placeholder="il tuo telefono" class="box"
+                            required /><br />
+                        <input type="text" id="richiamare" placeholder="giorno e ora per essere richiamato"
+                            class="box" /><br />
+                        <textarea id="msg" class="box" required maxlength="1000" placeholder="il tuo messaggio"
+                            cols="30" rows="10"></textarea>
+                        <input type="submit" value="invia" class="btn">
+                    </form>
+
+                    <div class="faq">
+                        <h3 class="title">Domande frequenti</h3>
+                        <div class="box active">
+                            <h3>Quanto tempo occorre per avere il sito online?</h3>
+                            <p>Dalla firma dell'incarico che coincide col pagamento dei servizi, il sito viene
+                                progettato, costruito e messo online entro 30 giorni</p>
+                        </div>
+                        <div class="box">
+                            <h3>Come avviene il pagamento?</h3>
+                            <p>Il pagamento viene effettuato in una unica soluzione anticipata al momento della
+                                firma dell'incarico</p>
+                        </div>
+                        <div class="box">
+                            <h3>Ho diritto al rimborso se non soddisfatto?</h3>
+                            <p>Certamente. Entro i 30 giorni, in qualunque momento e per qualunque motivo, può
+                                essere chiesto il rimborso della somma totale senza pagamento di alcuna penale</p>
+                        </div>
+                        <div class="box">
+                            <h3>I prezzi sono Iva inclusa o esclusa?</h3>
+                            <p>I prezzi sono tutti IVA esclusa. Al momento del pagamento viene emessa fattura
+                                coi totali aggiornati compresa IVA</p>
+                        </div>
+                        <div class="box">
+                            <h3>Posso avere una assistenza dopo i 30 giorni?</h3>
+                            <p>Certamente, l'assistenza è sempre garantita per qualunque problema inerente al
+                                sito. Per assistenza extra dopo la messa online il prezzo verrà quantificato di volta in
+                                volta oppure potete usufruire dei nostri pacchetti di assistenza trimestrali,
+                                semestrali o annuali</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="piepagina">
+                <img src="img/Logo.png" class="logo" alt="Logo Pixelpro">
+                <p>&copy; copyright 2023 by pixelpro | all rights reserved</p>
+
+                <ul class="links-container">
+                    <li class="link-items"><a href="#home" class="links">Home</a></li>
+                    <li class="link-items"><a href="#progetti" class="links">Progetti</a></li>
+                    <li class="link-items"><a href="#progettionline" class="links">Progetti online</a></li>
+                    <li class="link-items"><a href="#skills" class="links">Skills</a></li>
+                    <li class="link-items"><a href="#contatti" class="links">Contatti</a></li>
+                </ul>
+                <div class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!--
+            three js
+            <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+            <script type="importmap"></script>
+        -->
+            <!-- local js files -->
+            <script src="projects.js"></script>
+            <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vedi progetto</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section class="view-property">
+
+      <div class="details">
+         <div class="thumb">
+            <div class="big-image">
+               <img src="../img/portfolio-31-04.jpg" alt="">
+            </div>
+
+            <div class="button-condividi">
+               <div id="fb-root"></div>
+               <script async defer crossorigin="anonymous"
+                  src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v11.0" nonce="N1jYCEIF"></script>
+               <div class="fb-share-button" data-href="https://www.pixelpro.cloud/schedeprogetti/vediprogetto_14.html"
+                  data-layout="button" data-size="small">
+                  <a target="_blank"
+                     href="https://www.facebook.com/sharer/sharer.php?u=https://www.pixelpro.cloud/schedeprogetti/vediprogetto_14.html&amp;src=sdkpreparse"
+                     class="fb-xfbml-parse-ignore">Condividi</a>
+               </div>
+               <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: it_IT</script>
+               <script type="IN/Share"
+                  data-url="https://www.pixelpro.cloud/schedeprogetti/vediprogetto_14.html"></script>
+               <a class="twitter-share-button"
+                  href="https://twitter.com/intent/tweet?url=https://www.pixelpro.cloud/schedeprogetti/vediprogetto_14.html&text=Una pagina che ti potrebbe interessare"
+                  data-size="large">Tweet</a>
+               <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+               <a href="https://api.whatsapp.com/send?text=Una pagina che ti potrebbe interessare%20https://www.pixelpro.cloud/schedeprogetti/vediprogetto_14.html"
+                  target="_blank" class="whatsapp-button">
+                  <button class="whatsapp-button">
+                     <i class="fab fa-whatsapp"></i>
+                     WhatsApp
+                  </button>
+               </a>
+               <a href="https://t.me/share/url?url=https://www.pixelpro.cloud/schedeprogetti/vediprogetto_14.html&text=Una pagina che ti potrebbe interessare"
+                  target="_blank" class="telegram-button">
+                  <i class="fab fa-telegram"></i>
+                  Telegram
+               </a>
+            </div>
+
+            <div class="button-container">
+               <a href="https://portfolio-31-04.vercel.app/" class="inline-btn">Vedi progetto
+                  online</a>
+               <a href="https://pixelpro.cloud" class="inline-btn">Torna alla Home</a>
+            </div>
+            <div class="row">
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active categorie-btn"
+                     data-filter-value="categorie">Categorie</button>
+                  <button type="button" class="active" data-filter-value="react"
+                     onclick="window.location.href='../portfolio/portfolio.html'">portfolio</button>
+                  <button type="button" class="active" data-filter-value="fullstack"
+                     onclick="window.location.href='../servizi/servizi.html'">servizi</button>
+               </div>
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano
+                     consigliato</button>
+                  <button type="button" class="active" data-filter="basic">medium</button>
+                  <button type="button" class="active" data-filter="basic">plus</button>
+               </div>
+            </div>
+
+            <div class="row-descrizione">
+               <h3 class="title">Descrizione del Progetto - Sito per un portfolio personale</h3>
+               <p class="description">Benvenuti in questo progetto per un sito web portfolio di un web designer! <br>
+                  in questo progetto prendiamo spunto per presentare un designer professionista con una vasta esperienza
+                  in diverse categorie di progetti creativi, dalle illustrazioni ai loghi, dal web design all'editoria.
+                  <br>
+                  In questo sito web potrete inserire una selezione delle vostre migliori opere, suddivise per categorie
+                  e progetti. <br>
+                  Sia che siate un'azienda in cerca di un nuovo logo, un autore alla ricerca di un libro da pubblicare,
+                  o un web designer alla ricerca di un nuovo sito web, troverete sicuramente qualcosa che soddisferà le
+                  vostre esigenze. <br>
+                  Nella sezione "Portfolio" si potranno visualizzare i vostri lavori e leggere le loro descrizioni,
+                  mentre nella sezione "CV" chi interessato potrà scaricare un curriculum vitae e conoscere meglio la
+                  vostra formazione e l'esperienza lavorativa. <br>
+                  Inoltre, nella parte inferiore della pagina, abbiamo inserito un pulsante "Torna all'inizio" per
+                  navigare
+                  facilmente tra le sezioni. <br>
+                  Ancora una volta vogliamo ripetere il concetto che i siti portfolio vanno bene anche per
+                  altre categorie di liberi professionisti. <br> Noi usiamo sempre l'esempio di un wed developer ma
+                  possiamo usare
+                  questi progetti anche per medici, avvocati, musicisti, youtuber, influencer, ecc.. <br>
+                  Grazie per aver visitato questo progetto e spero di poter collaborare con voi per i vostri
+                  prossimi progetti creativi!
+               </p>
+            </div>
+         </div>
+
+         <section class="pricing section-padding" id="pricing">
+            <div class="container">
+               <div class="row">
+                  <div class="section-title text-align">
+                     <h5 class="sub-title">Prezzi</h5>
+                     <h3 class="main-title">Piani Tariffari</h3>
+                     <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div id="cards-container" class="card-container"></div>
+         <script>
+            var cardsContainer = document.getElementById('cards-container');
+            fetch('cards.html')
+               .then(response => response.text())
+               .then(html => cardsContainer.innerHTML = html);
+         </script>
+         <div class="piepagina">
+            <img src="../img/Logo.png" class="logo" alt="Logo Pixelpro">
+            <p><strong><strong>&copy; copyright 2023 by pixelpro | all rights reserved</strong></p>
+            <ul class="links-container">
+               <li class="link-items"><a href="/index.html#home" class="links">Home</a></li>
+               <li class="link-items"><a href="/index.html#progetti" class="links">Progetti</a></li>
+               <li class="link-items"><a href="/index.html#progettionline" class="links">Progetti online</a></li>
+               <li class="link-items"><a href="/ndex.html#skills" class="links">Skills</a></li>
+               <li class="link-items"><a href="/index.html#contatti" class="links">Contatti</a></li>
+            </ul>
+            <div class="toggle-btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>

@@ -1,0 +1,138 @@
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vedi progetto</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section class="view-property">
+
+      <div class="details">
+         <div class="thumb">
+            <div class="big-image">
+               <img src="../img/sito-fashion.jpg" alt="">
+            </div>
+
+            <div class="button-condividi">
+               <div id="fb-root"></div>
+               <script async defer crossorigin="anonymous"
+                  src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v11.0" nonce="N1jYCEIF"></script>
+               <div class="fb-share-button" data-href="https://www.pixelpro.cloud/schedeprogetti/vediprogetto_40.html"
+                  data-layout="button" data-size="small">
+                  <a target="_blank"
+                     href="https://www.facebook.com/sharer/sharer.php?u=https://www.pixelpro.cloud/schedeprogetti/vediprogetto_40.html&amp;src=sdkpreparse"
+                     class="fb-xfbml-parse-ignore">Condividi</a>
+               </div>
+               <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: it_IT</script>
+               <script type="IN/Share"
+                  data-url="https://www.pixelpro.cloud/schedeprogetti/vediprogetto_40.html"></script>
+               <a class="twitter-share-button"
+                  href="https://twitter.com/intent/tweet?url=https://www.pixelpro.cloud/schedeprogetti/vediprogetto_40.html&text=Una pagina che ti potrebbe interessare"
+                  data-size="large">Tweet</a>
+               <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+               <a href="https://api.whatsapp.com/send?text=Una pagina che ti potrebbe interessare%20https://www.pixelpro.cloud/schedeprogetti/vediprogetto_40.html"
+                  target="_blank" class="whatsapp-button">
+                  <button class="whatsapp-button">
+                     <i class="fab fa-whatsapp"></i>
+                     WhatsApp
+                  </button>
+               </a>
+               <a href="https://t.me/share/url?url=https://www.pixelpro.cloud/schedeprogetti/vediprogetto_40.html&text=Una pagina che ti potrebbe interessare"
+                  target="_blank" class="telegram-button">
+                  <i class="fab fa-telegram"></i>
+                  Telegram
+               </a>
+            </div>
+
+            <div class="button-container">
+               <a href="https://sito-fashion.vercel.app/" class="inline-btn">Vedi progetto
+                  online</a>
+               <a href="https://pixelpro.cloud" class="inline-btn">Torna alla Home</a>
+            </div>
+            <div class="row">
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active categorie-btn"
+                     data-filter-value="categorie">Categorie</button>
+                  <button type="button" class="active" data-filter-value="react"
+                     onclick="window.location.href='../vendita/vendita.html'">vendita</button>
+               </div>
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano
+                     consigliato</button>
+                  <button type="button" class="active" data-filter="basic">medium</button>
+                  <button type="button" class="active" data-filter="basic">plus</button>
+               </div>
+            </div>
+
+            <div class="row-descrizione">
+               <h3 class="title">Descrizione del Progetto - Sito per una attività di vendita moda fashion</h3>
+               <p class="description">Benvenuti in questo progetto per un sito di moda fashion, dove potrete presentare
+                  le ultime tendenze e le novità più interessanti del mondo della moda. <br>
+                  Attraverso una galleria di immagini di alta qualità e una selezione di articoli curata nei minimi
+                  dettagli, inviteremo i clienti ad esplorare il vasto assortimento di abbigliamento e accessori,
+                  pensati per soddisfare ogni esigenza e stile. <br>
+                  Il vostro obiettivo è offrire ai clienti la possibilità di scoprire e indossare capi di abbigliamento
+                  unici ed esclusivi, realizzati con materiali di alta qualità e curati in ogni dettaglio. <br>
+                  Inoltre, la sezione dedicata alle testimonianze dei clienti rappresenta una importante fonte di
+                  ispirazione per i visitatori, permettendo di scoprire come i vostri articoli abbiano fatto la
+                  differenza
+                  nella vita di molte persone. <br>
+                  La vostra passione per la moda vi spinge costantemente a cercare nuove soluzioni e idee innovative,
+                  per offrire sempre prodotti di alta qualità e dallo stile unico e riconoscibile. <br>
+                  Questo sito web rappresenta un importante punto di riferimento per gli amanti della moda, e vi
+                  impegnate costantemente ad offrire un'esperienza di acquisto online facile e sicura,
+                  accompagnata da un servizio clienti sempre attento e disponibile. <br>
+                  Siamo certi che, esplorando questo progetto, troverete l'ispirazione giusta per esprimere al meglio
+                  la vostra personalità e il vostro stile unico e inimitabile. <br>
+                  Grazie per aver visionato questo progetto!
+               </p>
+            </div>
+         </div>
+         <section class="pricing section-padding" id="pricing">
+            <div class="container">
+               <div class="row">
+                  <div class="section-title text-align">
+                     <h5 class="sub-title">Prezzi</h5>
+                     <h3 class="main-title">Piani Tariffari</h3>
+                     <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div id="cards-container" class="card-container"></div>
+         <script>
+            var cardsContainer = document.getElementById('cards-container');
+            fetch('cards.html')
+               .then(response => response.text())
+               .then(html => cardsContainer.innerHTML = html);
+         </script>
+         <div class="piepagina">
+            <img src="../img/Logo.png" class="logo" alt="Logo Pixelpro">
+            <p><strong><strong>&copy; copyright 2023 by pixelpro | all rights reserved</strong></p>
+            <ul class="links-container">
+               <li class="link-items"><a href="/index.html#home" class="links">Home</a></li>
+               <li class="link-items"><a href="/index.html#progetti" class="links">Progetti</a></li>
+               <li class="link-items"><a href="/index.html#progettionline" class="links">Progetti online</a></li>
+               <li class="link-items"><a href="/ndex.html#skills" class="links">Skills</a></li>
+               <li class="link-items"><a href="/index.html#contatti" class="links">Contatti</a></li>
+            </ul>
+            <div class="toggle-btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
